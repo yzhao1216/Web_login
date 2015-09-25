@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns="http://xmlns.jcp.org/xml/ns/javaee"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_3_1.xsd"
+         version="3.1">
+    <servlet>
+        <servlet-name>actionServlet</servlet-name>
+        <servlet-class>web.ActionServlet</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>checkCodeServlet</servlet-name>
+        <servlet-class>web.CheckCodeServlet</servlet-class>
+    </servlet>
+    
+    
+    <servlet-mapping>
+        <servlet-name>actionServlet</servlet-name>
+        <url-pattern>*.do</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>checkCodeServlet</servlet-name>
+        <url-pattern>/checkcode</url-pattern>
+    </servlet-mapping>
+
+</web-app>
